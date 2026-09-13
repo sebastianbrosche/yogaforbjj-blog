@@ -127,6 +127,11 @@ article.post { padding: 40px 0 72px; }
 }
 .btn-primary:hover { background: #d9a15a; }
 
+.related { margin: 32px 0 8px; }
+.related h3 { color: #f3eee4; margin-bottom: 10px; font-size: 1.15rem; }
+.related ul { margin: 0 0 0 1.2rem; }
+.related li { margin-bottom: 6px; }
+
 .author-box {
   display: flex;
   gap: 16px;

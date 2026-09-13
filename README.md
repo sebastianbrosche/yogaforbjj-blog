@@ -1,2 +1,2 @@
 # yogaforbjj-blog
-Yoga for BJJ blog — mobility, recovery, and longevity for grapplers.
+Yoga for BJJ blog :  mobility, recovery, and longevity for grapplers.

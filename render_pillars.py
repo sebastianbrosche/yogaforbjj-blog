@@ -47,7 +47,15 @@ def embed_iframe(guid: str) -> str:
     )
 
 
+def strip_dashes(text: str) -> str:
+    text = text.replace("\u2014", ": ").replace("\u2013", "-")
+    text = re.sub(r":\s+:", ":", text)
+    text = re.sub(r"  +", " ", text)
+    return text
+
+
 def inline(text: str) -> str:
+    text = strip_dashes(text)
     text = html.escape(text)
     text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
     text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r'<a href="\2">\1</a>', text)
